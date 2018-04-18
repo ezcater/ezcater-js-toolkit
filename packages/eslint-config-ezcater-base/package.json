@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ezcater-base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The base style config for ezCater Javascript",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,23 @@
     "type": "git",
     "url": "https://github.com/ezcater/ezcater-javascript-style"
   },
-  "keywords": ["eslint", "eslintconfig", "config", "ezcater", "javascript", "styleguide"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "ezcater",
+    "javascript",
+    "styleguide"
+  ],
   "author": "ezCater",
   "dependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
     "prettier": "^1.12.0"
   }
 }
