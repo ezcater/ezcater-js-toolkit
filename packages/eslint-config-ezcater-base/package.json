@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ezcater-base",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The base style config for ezCater Javascript",
   "main": "index.js",
   "scripts": {
