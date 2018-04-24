@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['prettier', 'prettier/react'],
   rules: {
     'prettier/prettier': [
       'error',

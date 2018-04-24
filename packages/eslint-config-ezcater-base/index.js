@@ -3,11 +3,14 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'airbnb',
     'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'prettier',
+    'prettier/react',
     './rules/base.js',
-    './rules/prettier.js',
     './rules/react.js',
+    './rules/prettier.js',
   ],
   parserOptions: {
     ecmaVersion: 6,
