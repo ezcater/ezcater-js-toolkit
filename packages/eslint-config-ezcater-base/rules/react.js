@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     'jsx-a11y/anchor-is-valid': 'error',
+    'react/display-name': 'off',
     'react/jsx-key': 'error',
     'react/jsx-filename-extension': 'off',
     'react/no-array-index-key': 'off',
