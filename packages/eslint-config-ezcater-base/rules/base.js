@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    eqeqeq: ['error', 'smart'],
     'linebreak-style': 'off',
     'no-console': 'error',
     'no-extra-bind': 'error',
