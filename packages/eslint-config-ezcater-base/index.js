@@ -8,6 +8,7 @@ module.exports = {
     'airbnb-base/rules/strict',
     'prettier',
     './rules/base.js',
+    './rules/import.js',
     './rules/prettier.js',
   ],
   parserOptions: {
