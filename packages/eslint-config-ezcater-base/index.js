@@ -4,12 +4,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
-    'airbnb',
+    'airbnb-base',
+    'airbnb-base/rules/strict',
     'prettier',
-    'prettier/react',
     './rules/base.js',
-    './rules/react.js',
     './rules/prettier.js',
   ],
   parserOptions: {

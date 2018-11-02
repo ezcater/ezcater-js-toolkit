@@ -4,7 +4,7 @@
 
 ## Usage
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+, React, JSX, and Prettier.
+Our default export contains our base ESLint rules, including ECMAScript 6+ and Prettier.
 
 1.  Install the package as a dev dependency for your project:
 
