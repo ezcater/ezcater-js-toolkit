@@ -13,7 +13,6 @@ module.exports = {
     './rules/filenames.js',
     './rules/jsxally.js',
     './rules/react.js',
-    './rules/imports.js',
   ],
   parser: 'babel-eslint',
 };

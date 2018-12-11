@@ -4,7 +4,7 @@
 
 ## Usage
 
-Package extends [our base ESLint rules](https://www.npmjs.com/package/eslint-config-ezcater-base), and includes rules for React, JSX, Jest, and ES6 module import/export syntax.
+Package extends [our base ESLint rules](https://www.npmjs.com/package/eslint-config-ezcater-base), and includes rules for React, JSX, and Jest.
 
 1.  Install the package as a dev dependency for your project:
 
