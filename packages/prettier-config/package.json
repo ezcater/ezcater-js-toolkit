@@ -1,0 +1,8 @@
+{
+  "name": "@ezcater/prettier-config",
+  "version": "1.0.0",
+  "description": "ezcater's prettier configuration",
+  "main": "index.json",
+  "author": "craigcav",
+  "license": "MIT"
+}
