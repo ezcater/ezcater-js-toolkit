@@ -5,5 +5,6 @@ module.exports = {
     'no-console': 'off',
     'import/no-dynamic-require': 'off',
     'global-require': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };

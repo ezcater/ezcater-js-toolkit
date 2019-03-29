@@ -23,6 +23,8 @@ const ignore = useBuiltinIgnore ? ['--ignore-path', hereRelative('../config/.esl
 
 const cache = args.includes('--no-cache') ? [] : ['--cache'];
 
+const extensions = args.includes('--ext') ? [] : ['--ext', 'js,jsx,ts,tsx'];
+
 const filesGiven = parsedArgs._.length > 0;
 
 const filesToApply = filesGiven ? [] : ['.'];
@@ -36,7 +38,7 @@ if (filesGiven) {
 
 const result = spawn.sync(
   resolveBin('eslint'),
-  [...config, ...ignore, ...cache, ...args, ...filesToApply],
+  [...config, ...ignore, ...cache, ...args, ...filesToApply, ...extensions],
   {stdio: 'inherit'}
 );
 
