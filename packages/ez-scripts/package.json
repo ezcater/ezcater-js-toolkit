@@ -1,0 +1,27 @@
+{
+  "name": "@ezcater/ez-scripts",
+  "version": "0.0.1",
+  "description": "CLI toolbox for common scripts at ezcater",
+  "bin": {
+    "ez-scripts": "src/index.js"
+  },
+  "scripts": {
+    "lint": "node src lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ezcater/ez-scripts"
+  },
+  "author": "craigcav",
+  "license": "MIT",
+  "dependencies": {
+    "@ezcater/prettier-config": "^1.0.0",
+    "cross-spawn": "^6.0.5",
+    "eslint-config-ezcater-react": "^1.2.0",
+    "glob": "^7.1.3",
+    "lodash.has": "^4.5.2",
+    "read-pkg-up": "^5.0.0",
+    "which": "^1.3.1",
+    "yargs-parser": "^13.0.0"
+  }
+}
