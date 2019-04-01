@@ -14,12 +14,12 @@ const useBuiltinConfig =
   !hasFile('.eslintrc.js') &&
   !hasPkgProp('eslintConfig');
 
-const config = useBuiltinConfig ? ['--config', hereRelative('../config/eslintrc.js')] : [];
+const config = useBuiltinConfig ? ['--config', hereRelative('../files/eslintrc.js')] : [];
 
 const useBuiltinIgnore =
   !args.includes('--ignore-path') && !hasFile('.eslintignore') && !hasPkgProp('eslintIgnore');
 
-const ignore = useBuiltinIgnore ? ['--ignore-path', hereRelative('../config/.eslintignore')] : [];
+const ignore = useBuiltinIgnore ? ['--ignore-path', hereRelative('../files/.eslintignore')] : [];
 
 const cache = args.includes('--no-cache') ? [] : ['--cache'];
 

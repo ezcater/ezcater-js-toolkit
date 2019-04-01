@@ -1,20 +1,9 @@
 const path = require('path');
 const spawn = require('cross-spawn');
-const glob = require('glob');
+const yargs = require('yargs');
+const bootstrapYargs = require('./yargs/bootstrap');
 
-const [executor, ignoredBin, script, ...args] = process.argv;
-
-function getEnv() {
-  // this is required to address an issue in cross-spawn
-  // https://github.com/kentcdodds/kcd-scripts/issues/4
-  return Object.keys(process.env)
-    .filter(key => process.env[key] !== undefined)
-    .reduce((envCopy, key) => Object.assign(envCopy, {[key]: process.env[key]}), {
-      [`SCRIPTS_${script.toUpperCase()}`]: true,
-    });
-}
-
-function handleSignal(result) {
+function handleSignal(script, result) {
   if (result.signal === 'SIGKILL') {
     console.log(
       `The script "${script}" failed because the process exited too early. ` +
@@ -39,47 +28,39 @@ function attemptResolve(...resolveArgs) {
   }
 }
 
-function spawnScript() {
-  const relativeScriptPath = path.join(__dirname, './scripts', script);
+function execute(command) {
+  const [executor, , , ...args] = process.argv;
+  const relativeScriptPath = path.join(__dirname, './scripts', command);
   const scriptPath = attemptResolve(relativeScriptPath);
 
-  if (!scriptPath) throw new Error(`Unknown script "${script}".`);
+  if (!scriptPath) throw new Error(`Unknown command "${command}".`);
 
   const result = spawn.sync(executor, [scriptPath, ...args], {
     stdio: 'inherit',
-    env: getEnv(),
+    env: process.env,
   });
 
   if (result.signal) handleSignal(result);
   else process.exit(result.status);
 }
 
-if (script) spawnScript();
-else {
-  const scriptsPath = path.join(__dirname, 'scripts/');
-  const scriptsAvailable = glob.sync(path.join(__dirname, 'scripts', '*'));
-  // `glob.sync` returns paths with unix style path separators even on Windows.
-  // So we normalize it before attempting to strip out the scripts path.
-  const scriptsAvailableMessage = scriptsAvailable
-    .map(path.normalize)
-    .map(s =>
-      s
-        .replace(scriptsPath, '')
-        .replace(/__tests__/, '')
-        .replace(/\.js$/, '')
-    )
-    .filter(Boolean)
-    .join('\n  ')
-    .trim();
-  const fullMessage = `
-Usage: ${ignoredBin} [script] [--flags]
+yargs
+  .command(
+    'init',
+    'Set up your local development workflow with eslint, prettier, etc.',
+    bootstrapYargs,
+    () => execute('bootstrap')
+  )
+  .command('lint [...lint options]', 'Run linting.', () => execute('lint'))
+  .showHelpOnFail(true)
+  .demandCommand(1, '')
+  .help()
+  .version();
 
-Available Scripts:
-  ${scriptsAvailableMessage}
+const registeredCommands = yargs.getCommandInstance().getCommands();
+const currentCommand = yargs.argv._[0];
 
-Options:
-  All options depend on the script being run. Docs will be improved eventually, but for most scripts you can assume that the args you pass will be forwarded to the respective tool that's being run under the hood.
-
-  `.trim();
-  console.log(`\n${fullMessage}\n`);
+if (!registeredCommands.includes(currentCommand)) {
+  yargs.showHelp();
+  process.exit(1);
 }
