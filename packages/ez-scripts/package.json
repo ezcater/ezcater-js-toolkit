@@ -5,10 +5,6 @@
   "bin": {
     "ez-scripts": "src/index.js"
   },
-  "files": [
-    "eslint.js",
-    "prettier.js"
-  ],
   "scripts": {
     "lint": "node src lint"
   },
