@@ -4,5 +4,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/prefer-interface': 'warn',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
   },
 };

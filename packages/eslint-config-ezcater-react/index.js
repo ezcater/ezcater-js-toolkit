@@ -7,9 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:jest/recommended',
-    'airbnb',
-    'prettier/react',
     'ezcater-base',
+    'prettier/react',
     './rules/filenames.js',
     './rules/jsxally.js',
     './rules/react.js',

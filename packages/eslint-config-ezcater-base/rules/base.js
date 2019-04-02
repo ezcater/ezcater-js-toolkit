@@ -2,6 +2,8 @@ module.exports = {
   rules: {
     eqeqeq: ['error', 'smart'],
     'linebreak-style': 'off',
+    'no-use-before-define': 'off',
+    'no-plusplus': 'off',
     'no-console': 'error',
     'no-extra-bind': 'error',
     'no-implicit-globals': 'error',
@@ -19,7 +21,7 @@ module.exports = {
       },
     ],
     'object-curly-newline': ['error', {consistent: true}],
-    'operator-linebreak': ['error', 'after'],
+    'operator-linebreak': ['error', 'after', {overrides: {'?': 'before', ':': 'before'}}],
     'quote-props': ['error', 'as-needed'],
     'nonblock-statement-body-position': 'off',
     'max-len': [
