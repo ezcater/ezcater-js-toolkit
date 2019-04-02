@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-ezcater-typescript",
+  "version": "2.0.0",
+  "description": "The base style config for ezCater TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezcater/ezcater-javascript-style"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "ezcater",
+    "typescript",
+    "styleguide"
+  ],
+  "author": "ezCater",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "@typescript-eslint/parser": "^1.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-ezcater-react": "^2.0.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "typescript": "^3.3.3333"
+  }
+}
