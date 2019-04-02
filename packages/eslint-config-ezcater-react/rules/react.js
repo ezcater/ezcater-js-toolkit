@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -13,6 +13,8 @@ module.exports = {
     'react/no-danger': 'off',
     'react/no-direct-mutation-state': 'error',
     'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
     react: {
