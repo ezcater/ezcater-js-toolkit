@@ -49,7 +49,7 @@ Bootstrap our configuration files as follows:
 
 ```bash
 # Bootstraps the eslint and prettier config files using our preset for ESLint and our preset for prettier.
-$ ez-scripts init --all
+$ npx ez-scripts init --all
 ```
 
 Alternatively, Bootstrap or update a specific configuration file to match ezcater's preset
@@ -57,7 +57,7 @@ configuration as follows:
 
 ```bash
 # Bootstraps just the prettier files using our preset for prettier.
-$ ez-scripts init --prettier
+$ npx ez-scripts init --prettier
 ```
 
 ### Running tooling through ez-scripts
