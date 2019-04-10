@@ -33,7 +33,7 @@ This CLI that abstracts away all configuration for our development workflow tool
 
 ## Installation
 
-This module is distributed via [npm][npm] which is bundled with [node][node] and should be installed as one of your project's `devDependencies`:
+This module is distributed via [npm](https://www.npmjs.com/) which is bundled with [node](https://nodejs.org) and should be installed as one of your project's `devDependencies`:
 
 ```
 npm install --save-dev @ezcater/ez-scripts
