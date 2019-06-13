@@ -1,6 +1,6 @@
 {
   "name": "@ezcater/ez-scripts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI toolbox for common scripts at ezcater",
   "bin": {
     "ez-scripts": "src/index.js"
