@@ -17,7 +17,7 @@
   "dependencies": {
     "@ezcater/prettier-config": "^1.0.0",
     "cross-spawn": "^7.0.0",
-    "eslint-config-ezcater-typescript": "^3.0.0",
+    "eslint-config-ezcater-typescript": "^3.0.1",
     "lodash.has": "^4.5.2",
     "read-pkg-up": "^7.0.0",
     "typescript": "^3.6.3",
