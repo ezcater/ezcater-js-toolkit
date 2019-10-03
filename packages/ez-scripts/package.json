@@ -16,13 +16,13 @@
   "license": "MIT",
   "dependencies": {
     "@ezcater/prettier-config": "^1.0.0",
-    "cross-spawn": "^6.0.5",
-    "eslint-config-ezcater-typescript": "^2.2.0",
+    "cross-spawn": "^7.0.0",
+    "eslint-config-ezcater-typescript": "^3.0.0",
     "lodash.has": "^4.5.2",
-    "read-pkg-up": "^5.0.0",
-    "typescript": "^3.3.3333",
+    "read-pkg-up": "^7.0.0",
+    "typescript": "^3.6.3",
     "which": "^1.3.1",
-    "yargs": "^13.2.2",
-    "yargs-parser": "^13.0.0"
+    "yargs": "^14.0.0",
+    "yargs-parser": "^14.0.0"
   }
 }
