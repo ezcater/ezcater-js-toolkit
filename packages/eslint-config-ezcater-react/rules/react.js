@@ -18,6 +18,9 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-wrap-multilines': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-fragments': 'off',
+    'react/jsx-curly-brace-presence': 'off',
   },
   settings: {
     react: {
