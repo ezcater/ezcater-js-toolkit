@@ -1,4 +1,4 @@
-# ezcater-javascript-style
+# eslint-config-ezcater
 
 A home for our Javascript style rules
 
