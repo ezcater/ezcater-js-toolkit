@@ -13,5 +13,5 @@ module.exports = {
     './rules/jsxally.js',
     './rules/react.js',
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 };
