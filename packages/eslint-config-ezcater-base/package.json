@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ezcater-base",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "The base style config for ezCater Javascript",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,10 @@
     "eslint-plugin-prettier": "^3.1.4"
   },
   "peerDependencies": {
+    "eslint": "^7.13.0",
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {
     "eslint": "^7.13.0",
     "prettier": "^2.1.2"
   }
