@@ -4860,11 +4860,6 @@ lodash.camelcase@4.3.0:
   resolved "https://ezcater.jfrog.io/ezcater/api/npm/npm/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
-lodash.has@^4.5.2:
-  version "4.5.2"
-  resolved "https://ezcater.jfrog.io/ezcater/api/npm/npm/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
-  integrity sha1-0Z9NwQlQWMzL4rDN9O4P5Ko3yGI=
-
 lodash.ismatch@^4.4.0:
   version "4.4.0"
   resolved "https://ezcater.jfrog.io/ezcater/api/npm/npm/lodash.ismatch/-/lodash.ismatch-4.4.0.tgz#756cb5150ca3ba6f11085a78849645f188f85f37"
