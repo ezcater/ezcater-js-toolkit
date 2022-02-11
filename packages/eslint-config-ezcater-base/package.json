@@ -19,6 +19,7 @@
     "styleguide"
   ],
   "author": "ezCater",
+  "license": "MIT",
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.15.0",

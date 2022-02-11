@@ -19,6 +19,7 @@
     "styleguide"
   ],
   "author": "ezCater",
+  "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",

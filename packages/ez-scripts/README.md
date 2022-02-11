@@ -29,7 +29,6 @@ This CLI that abstracts away all configuration for our development workflow tool
   - [Use ez-scripts for your package.json scripts](use-ez-scripts-for-your-packagejson-scripts)
   - [Overriding Config](#overriding-config)
 - [Inspiration](#inspiration)
-- [LICENSE](#license)
 
 ## Installation
 
@@ -101,7 +100,3 @@ At the moment, `ez-scripts` supports two commands; `init` and `lint`. They allow
 ## Inspiration
 
 This is inspired by `react-scripts` and `kcd-scripts`.
-
-## LICENSE
-
-MIT

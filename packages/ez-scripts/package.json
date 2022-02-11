@@ -12,7 +12,7 @@
     "type": "git",
     "url": "github.com/ezcater/ez-scripts"
   },
-  "author": "craigcav",
+  "author": "ezCater",
   "license": "MIT",
   "dependencies": {
     "@ezcater/prettier-config": "^1.0.1",
