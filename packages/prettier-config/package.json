@@ -2,6 +2,11 @@
   "name": "@ezcater/prettier-config",
   "version": "1.0.1",
   "description": "ezcater's prettier configuration",
-  "main": "index.json",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezcater/ezcater-js-toolkit.git",
+    "directory": "packages/prettier-config"
+  },
+  "license": "MIT",
+  "main": "index.json"
 }

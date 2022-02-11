@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ezcater/ezcater-javascript-style/eslint-config-ezcater-react"
+    "url": "https://github.com/ezcater/ezcater-js-toolkit.git",
+    "directory": "packages/eslint-config-ezcater-react"
   },
   "keywords": [
     "eslint",

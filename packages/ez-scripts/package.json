@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/ezcater/ez-scripts"
+    "url": "https://github.com/ezcater/ezcater-js-toolkit.git",
+    "directory": "packages/ez-scripts"
   },
   "author": "ezCater",
   "license": "MIT",
