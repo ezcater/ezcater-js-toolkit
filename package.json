@@ -3,8 +3,17 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest --ci --coverage --maxWorkers=2 --reporters=jest-standard-reporter"
+  },
   "devDependencies": {
+    "@types/jest": "^27.4.0",
     "eslint": "^7.13.0",
+    "jest": "^27.5.1",
+    "jest-junit": "^13.0.0",
+    "jest-standard-reporter": "^2.0.0",
+    "jest-watch-typeahead": "^1.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.1.2"
   }
