@@ -15,6 +15,10 @@
   },
   "author": "ezCater",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
     "@ezcater/prettier-config": "^1.0.1",
     "cross-spawn": "^7.0.0",
