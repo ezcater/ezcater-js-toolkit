@@ -4,18 +4,24 @@
 
 ## Usage
 
-Our default export contains our base ESLint rules, including ECMAScript 6+ and Prettier.
+Our default export contains our base ESLint rules, including ECMAScript 6+.
 
 1.  Install the package as a dev dependency for your project:
 
 ```sh
+# NPM
 npm i eslint-config-ezcater-base --save-dev
+
+# Yarn
+yarn add eslint-config-ezcater-base -D
 ```
 
 2.  Add `ezcater-base` to the `extends` section of your project's `.eslintrc`:
 
 ```json
-extends: ['ezcater-base'],
+{
+  "extends": ["ezcater-base"]
+}
 ```
 
 3.  Add optional scripts to your `package.json` to run linting checks:
@@ -24,18 +30,5 @@ extends: ['ezcater-base'],
 "scripts": {
   "fix:lint": "eslint . --fix",
   "validate:lint": "eslint .",
-}
-```
-
-4. ESLint is configured here to run Prettier along with the other linting rules. But if your text editor supports a Prettier integration, you will probably need to copy the rules in `./rules/prettier.js` into a `.prettierrc` in your project's root directory:
-
-```json
-...in .prettierrc
-
-{
-  "singleQuote": true,
-  "printWidth": 100,
-  "trailingComma": "es5",
-  etc...
 }
 ```
