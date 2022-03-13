@@ -6,15 +6,15 @@ module.exports = {
     'eslint:recommended',
     'airbnb-base',
     'airbnb-base/rules/strict',
-    'prettier',
     './rules/base.js',
     './rules/import.js',
-    './rules/prettier.js',
+    // `eslint-config-prettier` requires `prettier` is last so it overrides
+    // other configs.
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  plugins: ['prettier'],
   rules: {},
 };
