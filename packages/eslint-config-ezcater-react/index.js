@@ -8,10 +8,12 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jest/recommended',
     'ezcater-base',
-    'prettier/react',
     './rules/filenames.js',
     './rules/jsxally.js',
     './rules/react.js',
+    // `eslint-config-prettier` requires `prettier` is last so it overrides
+    // other configs.
+    'prettier',
   ],
   parser: '@babel/eslint-parser',
 };
