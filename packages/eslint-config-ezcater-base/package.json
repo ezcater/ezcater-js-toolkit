@@ -32,7 +32,6 @@
     "eslint-plugin-jsx-a11y": "^6.4.1"
   },
   "peerDependencies": {
-    "eslint": ">=7.13.0",
-    "prettier": "^2.1.2"
+    "eslint": ">=7.13.0"
   }
 }
