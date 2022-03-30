@@ -38,6 +38,6 @@
     "eslint-plugin-react-hooks": "^2.5.1"
   },
   "peerDependencies": {
-    "eslint": "^7.13.0"
+    "eslint": ">=7.13.0"
   }
 }
