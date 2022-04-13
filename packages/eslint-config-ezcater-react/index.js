@@ -15,5 +15,4 @@ module.exports = {
     // other configs.
     'prettier',
   ],
-  parser: '@babel/eslint-parser',
 };
