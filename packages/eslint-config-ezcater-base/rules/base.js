@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    'arrow-body-style': 'off', // Copying behavior of eslint-plugin-prettier
     eqeqeq: ['error', 'smart'],
     'linebreak-style': 'off',
     'no-use-before-define': 'off',
@@ -7,6 +8,7 @@ module.exports = {
     'no-console': 'error',
     'no-extra-bind': 'error',
     'no-implicit-globals': 'error',
+    'prefer-arrow-callback': 'off', // Copying behavior of eslint-plugin-prettier
     'prefer-promise-reject-errors': 'error',
     curly: ['error', 'multi-or-nest'],
     'object-curly-spacing': ['error', 'never'],
