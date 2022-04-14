@@ -28,7 +28,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "eslint-config-ezcater-react": "^4.0.1",
+    "eslint-config-ezcater-base": "^5.0.1",
     "eslint-import-resolver-typescript": "^1.1.1"
   },
   "peerDependencies": {
