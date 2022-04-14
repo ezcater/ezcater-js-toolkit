@@ -1,15 +1,21 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    './rules/typescript.js',
-  ],
-  settings: {
-    parser: 'typescript-eslint-parser',
-    plugins: ['import'],
-    'import/resolver': {
-      typescript: {},
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      parser: '@typescript-eslint/parser',
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        './rules/typescript.js',
+      ],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
+          typescript: {},
+        },
+      },
     },
-  },
+  ],
 };
