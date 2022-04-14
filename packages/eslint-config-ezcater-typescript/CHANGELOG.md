@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - fix: allow eslint v8 as peer dependency
+- feat: only extend typescript rules to .ts/.tsx files
 
 ### Breaking changes
 - Replaced `eslint-config-ezcater-react` with `eslint-config-ezcater-base`. Consumers are expected to add `eslint-config-ezcater-react` separately if react linter rules are necessary.
