@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ezcater-typescript",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "The base style config for ezCater TypeScript",
   "main": "index.js",
   "scripts": {
