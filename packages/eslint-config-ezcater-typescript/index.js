@@ -5,6 +5,7 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
       extends: [
+        require.resolve('eslint-config-ezcater-base'),
         'plugin:@typescript-eslint/recommended',
         './rules/typescript.js',
       ],
