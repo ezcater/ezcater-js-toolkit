@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Breaking changes
+- Move `eslint-plugin-import` from dependencies to requiring as a peer dependency (`eslint-plugin-import` is a peer dependency of `eslint-config-airbnb-base`). This is to follow eslint best practices for shareable configs mentioned [here](https://eslint.org/docs/latest/extend/shareable-configs#publishing-a-shareable-config).
 
 ## [5.0.1] - 2022-04-13
 - fix: disable rules `arrow-body-style` and `prefer-arrow-callback` to copy previous behavior from `eslint-plugin-prettier`
