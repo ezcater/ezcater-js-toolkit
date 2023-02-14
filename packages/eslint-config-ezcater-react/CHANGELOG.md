@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Breaking changes
+- Bump `esling-config-ezcater-base` from 5.0.1 to 6.0.0, which has the breaking change of requiring `eslint-plugin-import` as a peer dependency.
+- Move: `eslint-plugin-filenames`, `eslint-plugin-import`, `eslint-plugin-jest`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, `eslint-plugin-react-hooks` from dependencies to requiring as peer dependencies. This is to follow eslint best practices for shareable configs mentioned [here](https://eslint.org/docs/latest/extend/shareable-configs#publishing-a-shareable-config).
 
 ## [5.0.0] - 2022-04-14
 - fix: allow eslint v8 as peer dependency
