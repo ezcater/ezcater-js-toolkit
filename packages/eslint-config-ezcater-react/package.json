@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ezcater-react",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "The style config for ezCater's React codebases",
   "main": "index.js",
   "scripts": {
