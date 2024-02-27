@@ -51,7 +51,7 @@ describe('lint', () => {
 
     expect(crossSpawn.sync).toHaveBeenCalledTimes(1);
     expect(crossSpawn.sync).toHaveBeenCalledWith(
-      'eslint',
+      './packages/ez-scripts/node_modules/eslint/bin/eslint.js',
       [
         '--config',
         './packages/ez-scripts/src/files/eslintrc.js',
@@ -81,7 +81,7 @@ describe('lint', () => {
 
       expect(crossSpawn.sync).toHaveBeenCalledTimes(1);
       expect(crossSpawn.sync).toHaveBeenCalledWith(
-        'eslint',
+        './packages/ez-scripts/node_modules/eslint/bin/eslint.js',
         [
           '--ignore-path',
           './packages/ez-scripts/src/files/.eslintignore',
@@ -110,7 +110,7 @@ describe('lint', () => {
 
       expect(crossSpawn.sync).toHaveBeenCalledTimes(1);
       expect(crossSpawn.sync).toHaveBeenCalledWith(
-        'eslint',
+        './packages/ez-scripts/node_modules/eslint/bin/eslint.js',
         [
           '--config',
           './packages/ez-scripts/src/files/eslintrc.js',
@@ -140,7 +140,7 @@ describe('lint', () => {
 
       expect(crossSpawn.sync).toHaveBeenCalledTimes(1);
       expect(crossSpawn.sync).toHaveBeenCalledWith(
-        'eslint',
+        './packages/ez-scripts/node_modules/eslint/bin/eslint.js',
         ['--cache', '.', '--ext', 'js,jsx,ts,tsx'],
         {stdio: 'inherit'}
       );
