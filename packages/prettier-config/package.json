@@ -1,7 +1,7 @@
 {
   "name": "@ezcater/prettier-config",
-  "version": "1.0.1",
-  "description": "ezcater's prettier configuration",
+  "version": "1.0.2",
+  "description": "[DEPRECATED] ezcater's prettier configuration",
   "repository": {
     "type": "git",
     "url": "https://github.com/ezcater/ezcater-js-toolkit.git",
@@ -9,6 +9,9 @@
   },
   "license": "MIT",
   "main": "index.json",
+  "scripts": {
+    "postinstall": "echo \"\\n⚠️  DEPRECATION WARNING: @ezcater/prettier-config is deprecated and no longer maintained. See https://github.com/ezcater/ezcater-js-toolkit for migration guidance.\\n\""
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

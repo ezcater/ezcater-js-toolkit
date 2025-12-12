@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.1] - 2025-12-12
+### Deprecated
+This library has been deprecated. See https://github.com/ezcater/ezcater-js-toolkit for migration guidance.
+
 ## [6.0.0] - 2023-02-14
 ### Breaking changes
 - Move `eslint-plugin-import` from dependencies to requiring as a peer dependency (`eslint-plugin-import` is a peer dependency of `eslint-config-airbnb-base`). This is to follow eslint best practices for shareable configs mentioned [here](https://eslint.org/docs/latest/extend/shareable-configs#publishing-a-shareable-config).

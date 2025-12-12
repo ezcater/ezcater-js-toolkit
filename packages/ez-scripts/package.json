@@ -1,12 +1,13 @@
 {
   "name": "@ezcater/ez-scripts",
-  "version": "2.0.1",
-  "description": "CLI toolbox for common scripts at ezcater",
+  "version": "2.0.2",
+  "description": "[DEPRECATED] CLI toolbox for common scripts at ezcater",
   "bin": {
     "ez-scripts": "src/index.js"
   },
   "scripts": {
-    "lint": "node src lint"
+    "lint": "node src lint",
+    "postinstall": "echo \"\\n⚠️  DEPRECATION WARNING: @ezcater/ez-scripts is deprecated and no longer maintained. See https://github.com/ezcater/ezcater-js-toolkit for migration guidance.\\n\""
   },
   "repository": {
     "type": "git",

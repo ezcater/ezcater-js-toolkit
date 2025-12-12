@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.1] - 2025-12-12
+### Deprecated
+This library has been deprecated. See https://github.com/ezcater/ezcater-js-toolkit for migration guidance.
+
 ## [6.0.0] - 2023-02-22
 ### Breaking changes
 - Bump `esling-config-ezcater-base` from 5.0.1 to 6.0.0, which has the breaking change of requiring `eslint-plugin-import` as a peer dependency.
