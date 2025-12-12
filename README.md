@@ -1,3 +1,19 @@
+[!CAUTION]
+This library is deprecated and should no longer be used. It has not been maintained for a long time and many of its dependencies are outdated. Please use the guidance below when configuring new projects.
+
+Base settings
+- `Prettier`: https://github.com/ezcater/tapas/blob/main/prettier.config.mjs
+- `ESLint`: https://github.com/ezcater/tapas/blob/main/eslint.config.mjs
+
+Additional packages you may need depending on your project
+- `@eslint/js`, the recommended JavaScript configuration from ESLint
+- `eslint-config-prettier`, which turns off rules handled by Prettier
+- `eslint-plugin-import` and `eslint-plugin-simple-import-sort` for projects that need consistent import sorting. We have commonly used `@/` and `~/` as path aliases.
+- `eslint-plugin-react` and `eslint-plugin-react-hooks`, using the recommended configs
+- `typescript-eslint` for TypeScript projects, including both recommended and stylistic configs
+- `eslint-plugin-storybook` if your project uses Storybook
+- `eslint-plugin-testing-library` if you use Testing Library utilities (works for more than React)
+
 # ezCater JS Toolkit
 
 A home for ezCater's JavaScript style rules, configuration, and tooling.
