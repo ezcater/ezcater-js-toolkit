@@ -13,7 +13,6 @@
     "postinstall": "echo \"\\n⚠️  DEPRECATION WARNING: @ezcater/prettier-config is deprecated and no longer maintained. See https://github.com/ezcater/ezcater-js-toolkit for migration guidance.\\n\""
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://ezcater.jfrog.io/ezcater/api/npm/npm/"
   }
 }

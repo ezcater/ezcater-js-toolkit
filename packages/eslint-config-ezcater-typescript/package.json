@@ -23,8 +23,7 @@
   "author": "ezCater",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://ezcater.jfrog.io/ezcater/api/npm/npm/"
   },
   "dependencies": {
     "eslint-config-ezcater-base": "^6.0.0",
